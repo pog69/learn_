@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>pog kadai</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li>NEWS</li>
+                <li>BIOGRAPHY</li>
+                <li>DISCOGRAPHY</li>
+                <li>EXHIBISHION</li>
+                <li>TOUR/TICKET</li>
+                <li>FANCLUB</li>
+                <li>SOLO</li>
+                <li>STORE</li>
+            </ul>
+        </header>
+        <section class="hero-wrapper">
+            <div class="hero">
+                <button type="button" class="anniversary">B'z 30year</button>
+                <button type="button" class="history">B'z<br>HISTORY</button>
+                <button type="button" class="scroll-bottom">↓</button>
+            </div>
+        </section>
+        <section class="info-wrapper">
+            <div class="info">
+                <div>
+                    <img src="img/7lFlVKe7.jpg">
+                    <p>aaaaaaaa</p>
+                </div>
+                <div>
+                    <img src="img/24547663.jpeg">
+                    <p>aaaaaaaa</p>
+                </div>
+                <div>
+                    <img src="img/7lFlVKe7.jpg">
+                    <p>aaaaaaaa</p>
+                </div>
+                <div>
+                    <img src="img/24547663.jpeg">
+                    <p>aaaaaaaa</p>
+                </div>
+            </div>
+        </section>
+        <section class="news-wrapper">
+            <div class="news">
+                <h1>NEWS</h1>
+                <table class="news-list">
+                    <colgroup>
+                        <col style="width: 8%;">
+                        <col style="width: 5%;">
+                        <col style="width: 72%;">
+                        <col style="width: 15%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="news-date">2018.01.01</td>
+                            <td class="news-type"><span>FC</span></td>
+                            <td class="news-content">2018 NEW YEAR MESSAGE</td>
+                            <td class="read-more">Read More ></td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">2018.01.01</td>
+                            <td class="news-type"><span>B'z</span></td>
+                            <td class="news-content">2018 NEW YEAR MESSAGE</td>
+                            <td class="read-more">Read More ></td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">2018.01.01</td>
+                            <td class="news-type"><span>FC</span></td>
+                            <td class="news-content">2018 NEW YEAR MESSAGE</td>
+                            <td class="read-more">Read More ></td>
+                        </tr>
+                        <tr>
+                            <td class="news-date">2018.01.01</td>
+                            <td class="news-type"><span>FC</span></td>
+                            <td class="news-content">2018 NEW YEAR MESSAGE</td>
+                            <td class="read-more">Read More ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>View All News ></p>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright(C) VERMILLION RECORDS, Inc. All Rights Reserved.</p>
+        </footer>
+        <div class="scroll-top">⬆︎</div>
+        <script type="text/javascript">
+            const scrollPosition = $('.info-wrapper').offset().top
+            $(function(){
+                $('.scroll-bottom').click(function(){
+                    $("html,body").animate({
+                        scrollTop : scrollPosition
+                    }, {
+                        queue : false
+                    })
+                })
+                $('.scroll-top').click(function(){
+                    $("html,body").animate({
+                        scrollTop : 0
+                    }, {
+                        queue : false
+                    })
+                })
+                $(window).scroll(function(){
+                    var distanceTop = $('.info-wrapper').offset().top - $(window).height();
+
+                    // id2に達しているかどうかを判別
+                    if ($(window).scrollTop() > distanceTop) {
+                        $('.scroll-top').css('display', 'flex')
+                    } else {
+                        $('.scroll-top').css('display', 'none')
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", helvecia,sans-serif,sans-serif;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+}
+
+header {
+    border-bottom: 1px solid #333;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background: #000;
+    z-index: 2;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    width: 850px;
+    height: 65px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+header ul li:hover {
+    color: #aaa;
+    cursor: pointer;
+}
+
+section.hero-wrapper {
+    padding-top: 66px;
+}
+
+section .hero {
+    background-image: url(./img/hero.png);
+    width: 100vw;
+    height: calc(100vh - 66px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+button.anniversary {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    bottom: 30%;
+}
+
+button.anniversary:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button.history {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    bottom: 17%;
+}
+
+button.history:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+button.scroll-bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 55px;
+    height: 50px;
+    font-size: 50px;
+    background: #aaa;
+    left: 50%;
+    color: #fff;
+}
+
+section.info-wrapper {
+    margin: 50px 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info img {
+    width: 250px;
+    height: 250px;
+}
+
+.info p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section.news-wrapper {
+    height: 500px;
+    background-color: #233244;
+}
+
+.news {
+    padding: 80px 50px;
+}
+
+.news h1{
+    font-size: 50px;
+    color: #c00;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+}
+
+.news p {
+    color: #c00;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.news-list {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+tr:first-child td {
+    border-top: 1px solid #c00;
+}
+
+td {
+    height: 50px;
+    border-bottom: 1px solid #c00;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+}
+
+.news-type span {
+    background-color: #c00;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.read-more {
+    color: #c00;
+    text-align: right;
+}
+
+footer {
+    height: 30px;
+    border-top: 1px solid #aaa;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer p {
+    font-size: 10px;
+    color: #aaa;
+    padding-left: 50px;
+}
+
+.scroll-top {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 2;
+}
