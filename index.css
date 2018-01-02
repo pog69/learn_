@@ -1,19 +1,24 @@
-@chsarset "utf-8" ;
+@chsarset "utf-8";
+
+body {
+    margin: 0;
+}
+
 header {
   background-color: black;
   background-image: url("ap_dinosaur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+  position: relative;
 }
+
 #header{
   text-align: center;
   color: white;
 }
 #header-logo{
   color: white;
-}
- {
   margin: auto;
 }
 body {
@@ -34,7 +39,6 @@ img {
 }
 #photo p {
   color: white;
-  height: 500px;
 }
 footer {
   color: white;
@@ -43,6 +47,8 @@ footer {
 
 #photo {
   height: 300px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #photo div {
@@ -50,14 +56,17 @@ footer {
   text-align: center;
   margin: 25px;
 }
-.btn{
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 550px;
-  margin-bottom: 20px;
 
+button.ann{
+    border: solid 5px blue;
+    position: absolute;
+    bottom: 35%;
+    right: 5%;
 }
-.ann button{
-  border: solid 5px blue;
+
+button.his {
+    border: solid 5px blue;
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
 }
