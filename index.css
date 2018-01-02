@@ -1,0 +1,37 @@
+@chsarset "utf-8" ;
+header {
+  background-color: black;
+}
+#header{
+  float: right;
+  color: white;
+}
+#header-logo{
+  color: white;
+}
+ {
+  margin: auto;
+  float: center;
+}
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", helvecia,sans-serif,sans-serif;
+  background-color: black;
+}
+.news{
+  text-align: center;
+  color: red;
+  background-color: MidnightBlue;
+}
+
+.photo2 {
+  text-align: center
+}
+footer {
+  text-align: leftl;
+  color: white;
+  background-color: black;
+}
+main {
+  background-image: url("./ap_dinosaur.jpg");
+
+}
