@@ -1,48 +1,99 @@
 @chsarset "utf-8" ;
+
+body{
+  margin: 0;
+}
+
 header {
   background-color: black;
   background-image: url("ap_dinosaur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+  position: relative;
 }
 #header{
   text-align: center;
   color: white;
+  background-color: black;
+  padding: 10px;
 }
+
+
 #header-logo{
   color: white;
-}
- {
-  margin: auto;
+  position: fixed;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
 }
 body {
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", helvecia,sans-serif,sans-serif;
   background-color: black;
 }
 #news{
-  color: red;
-  background-color: MidnightBlue;
+  background-color: #7080da;
+  height: 500px;
 }
 
-img {
-  display: block;
+h1 {
+  color: red;
+  text-align: center;
+  padding-top: 50px;
 }
+
+td {
+  border-top: solid 1px red;
+  border-collapse: collapse;
+  padding: 10px
+}
+
+
+
+.date{
+  color: white;
+}
+
+.type{
+  color: white;
+ background-color: red;
+}
+
+.message {
+  color: white;
+}
+
+.read-more {
+  color: red;
+  text-align: right;
+}
+
+.view-news {
+  text-align: center;
+  color: red;
+  padding-bottom: 100px;
+}
+
 #photo img{
   width: 200px;
   height: 200px;
 }
 #photo p {
   color: white;
-  height: 500px;
 }
 footer {
   color: white;
   height: 30px;
+  border-top: solid 1px gray;
+  font-size: 1px;
+  text-align: left;
 }
 
 #photo {
   height: 300px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 #photo div {
@@ -50,14 +101,64 @@ footer {
   text-align: center;
   margin: 25px;
 }
-.btn{
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-top: 550px;
-  margin-bottom: 20px;
 
+.btn {
+  text-align: right;
+  margin-top: 500px;
+  margin-bottom: 150px;
+  position: relative;
 }
-.ann button{
-  border: solid 5px blue;
+
+.ann {
+  border: solid 5px black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: red;
+  box-shadow: 3px 3px 15px black;
+}
+
+.his{
+  border: solid 5px black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: red;
+  box-shadow: 3px 3px 15px black;
+}
+
+.contact p{
+  color: white;
+  text-align: right;
+  border-top: solid 1px gray;
+  margin: 10px;
+  font-size: 15px;
+}
+
+.btn2 {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+}
+
+.top{
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+}
+
+.btn2 a:hover {
+  background-color: red;
+}
+
+.bottom-btn {
+  text-align: center
+}
+
+.bottom {
+  color: white;
+  font-size: 30px;
 }
